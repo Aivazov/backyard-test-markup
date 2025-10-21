@@ -1,4 +1,4 @@
-import TokenDesignRightArrowIcon from '../vectors/TokenDesignRightArrowIcon';
+// import TokenDesignRightArrowIcon from '../vectors/TokenDesignRightArrowIcon';
 
 const DesignSlickContent = ({ cardTitle, cardDescr }) => {
   return (
