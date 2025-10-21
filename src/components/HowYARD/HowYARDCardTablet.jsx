@@ -53,7 +53,7 @@ const HowYARDCardTablet = () => {
           className='h-[190px] min-[800px]:h-[220px]'
         />
       </div>
-      <div className='hidden min-[1110px]:block absolute top-[80px] left-[160px] z-0'>
+      <div className='hidden min-[1110px]:block min-[1350px]:hidden absolute top-[80px] left-[160px] z-0'>
         <img
           src='how-yard/how-yard-bg-desktop.png'
           alt='how-yard-bg-desktop'
