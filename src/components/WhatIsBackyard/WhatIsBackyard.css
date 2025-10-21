@@ -1,0 +1,26 @@
+.what-is .slick-dots {
+  display: flex !important;
+  bottom: -40px !important;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.what-is .slick-dots li {
+  margin-right: 6px;
+}
+
+.what-is .slick-dots li button > div {
+  width: 28px !important;
+  height: 4px !important;
+  background-color: #979797 !important;
+  border-radius: 148px !important;
+  opacity: 0.19 !important;
+  transition: background-color 0.3s ease, opacity 0.3s ease !important;
+  border: none !important;
+}
+
+.what-is .slick-dots li.slick-active > div {
+  background-color: #5d625f !important;
+  opacity: 1 !important;
+}

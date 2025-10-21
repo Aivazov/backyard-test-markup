@@ -1,0 +1,29 @@
+.token-design .slick-dots {
+  display: flex !important;
+  gap: 3px;
+  bottom: -40px !important;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.token-design .slick-dots li {
+  margin: 0px !important;
+  /* display: flex; */
+}
+
+.token-design .slick-dots li button > div {
+  width: 15px !important;
+  height: 3px !important;
+  background-color: #979797 !important;
+  border-radius: 148px !important;
+  opacity: 0.19 !important;
+  transition: background-color 0.3s ease, opacity 0.3s ease !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.token-design .slick-dots li.slick-active > div {
+  background-color: #5d625f !important;
+  opacity: 1 !important;
+}
