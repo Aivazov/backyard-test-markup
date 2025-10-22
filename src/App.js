@@ -12,6 +12,7 @@ import WhatIsBackyard from './components/WhatIsBackyard/WhatIsBackyard';
 // import './App.css';
 
 function App() {
+  const isFirefox = /firefox/i.test(navigator.userAgent);
   return (
     <div className='bg-[#EFEFF2] relative p-[22px] md:px-8 xl:px-20 flex justify-center items-center'>
       <div className='w-full max-w-[1370px]'>
@@ -40,26 +41,39 @@ function App() {
           // style={{ filter: 'invert(100%)' }}
         />
       </div> */}
-      <div className='w-full absolute left-0 right-0 top-0 z-20 md:hidden color-dodge min-[490px]:hidden'>
+      {/* <div className='w-full absolute left-0 right-0 top-0 z-20 md:hidden color-dodge min-[490px]:hidden'>
         <img
-          // src='footer/bg-footer-mobile.png'
-          // src='footer/bg-big-footer-mobile.png'
+          // src='bg/hero-bg-mobile-no-ellipses-1.png'
           src='bg/hero-bg-1.png'
-          alt='bg-hero-mobile'
+          alt='bg-hero'
           className='w-full'
-          // style={{ filter: 'invert(100%)' }}
         />
-      </div>
-      <Background
-        imgSrc='bg/hero-bg-1.png'
-        imgAlt='bg-hero-mobile'
-        classSettings='md:hidden'
-      />
-      <Background
+      </div> */}
+      {isFirefox ? (
+        <></>
+      ) : (
+        <>
+          <Background
+            imgSrc='bg/hero-bg-mobile-ellipse.png'
+            imgAlt='bg-hero-mobile'
+            classSettings='top-[290px] md:hidden'
+          />
+          <div className='w-full absolute left-0 right-0 top-0 z-20 md:hidden color-dodge min-[490px]:hidden'>
+            <img
+              // src='bg/hero-bg-mobile-no-ellipses-1.png'
+              src='bg/hero-bg-1.png'
+              alt='bg-hero'
+              className='w-full'
+            />
+          </div>
+        </>
+      )}
+
+      {/* <Background
         imgSrc='bg/hero-bg-tablet.png'
         imgAlt='bg-hero-tablet'
         classSettings='md:block'
-      />
+      /> */}
       <BackgroundFooter
         imgSrc='footer/footer-ellipse-1.png'
         styleCustom={{ filter: 'blur(71.1482px)' }}

@@ -2,6 +2,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import './WhatIsBackyard.css';
+
 import WhatIsBackyardCardTablet from './WhatIsBackyardCardTablet';
 import { cardContent } from '../assets/whatIsBackyard';
 import { slickWhatIsBackyard } from '../assets/slickSettings';

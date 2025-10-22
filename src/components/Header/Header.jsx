@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 // import logo from '../../logo-header-360.svg';
 import LogoHeader from './LogoHeader';
 import MenuOpenIcon from '../vectors/MenuOpenIcon';

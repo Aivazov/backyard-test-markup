@@ -13,11 +13,13 @@ const WhatIsBackyardCardDesktop = () => {
             className='flex flex-col items-center justify-between gap-4'
           >
             <div className='w-full flex flex-col justify-center items-center'>
-              <img
-                src={imgSrc}
-                alt={imgAlt}
-                className='w-full h-[160px] object-none object-top'
-              />
+              <div>
+                <img
+                  src={imgSrc}
+                  alt={imgAlt}
+                  className='w-full h-[160px] object-none object-top  rounded-tl-[50px] rounded-tr-[60px]'
+                />
+              </div>
 
               <BackyardTitle num={num} title={header} />
             </div>
