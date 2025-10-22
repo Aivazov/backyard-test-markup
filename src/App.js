@@ -1,4 +1,5 @@
 import Background from './components/Background';
+import BackgroundFooter from './components/Backgrounds/BackgroundFooter';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -59,16 +60,31 @@ function App() {
         imgAlt='bg-hero-tablet'
         classSettings='md:block'
       />
-      <div className='w-full absolute left-0 right-0 bottom-0 z-20 md:hidden color-dodge'>
+      <BackgroundFooter
+        imgSrc='footer/footer-ellipse-1.png'
+        styleCustom={{ filter: 'blur(71.1482px)' }}
+      />
+      <BackgroundFooter
+        imgSrc='footer/footer-ellipse-2.png'
+        styleCustom={{ filter: 'blur(71.1482px)' }}
+      />
+      <BackgroundFooter
+        imgSrc='footer/footer-ellipse-3.png'
+        styleCustom={{ filter: 'blur(71.1482px)' }}
+      />
+      <BackgroundFooter
+        imgSrc='footer/bg-mobile-group-no-el.png'
+        classCustom='bg-transparent bottom-0 color-dodge'
+        styleCustom={{ bottom: '0px' }}
+      />
+      {/* <div className='w-full absolute left-0 right-0 bottom-0 z-20 md:hidden color-dodge'>
         <img
-          // src='footer/bg-footer-mobile.png'
-          // src='footer/bg-big-footer-mobile.png'
-          src='footer/bg-whole-footer-mobile.png'
+          src='footer/bg-mobile-group-no-el.png'
           alt='bg-footer'
           className='w-full'
           // style={{ filter: 'invert(100%)' }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
