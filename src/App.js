@@ -25,30 +25,6 @@ function App() {
         <RealYield />
         <Footer />
       </div>
-      {/* <div className='w-full absolute left-0 right-0 top-0 z-[1] md:hidden color-dodge'>
-        <img
-          src='footer/bg-mobile-whole.png'
-          alt='bg-footer'
-          className='w-full'
-          // style={{ filter: 'invert(100%)' }}
-        />
-      </div> */}
-      {/* <div className='w-full absolute left-0 right-0 bottom-[200px] z-20 md:hidden rotate-180 color-dodge'>
-        <img
-          src='footer/bg-footer-upper-mobile.png'
-          alt='bg-footer'
-          className='w-full'
-          // style={{ filter: 'invert(100%)' }}
-        />
-      </div> */}
-      {/* <div className='w-full absolute left-0 right-0 top-0 z-20 md:hidden color-dodge min-[490px]:hidden'>
-        <img
-          // src='bg/hero-bg-mobile-no-ellipses-1.png'
-          src='bg/hero-bg-1.png'
-          alt='bg-hero'
-          className='w-full'
-        />
-      </div> */}
       {isFirefox ? (
         <></>
       ) : (
@@ -69,6 +45,22 @@ function App() {
         </>
       )}
 
+      <Background
+        imgSrc='bg/hero-bg-tablet-no-ell.png'
+        imgAlt='bg-hero-mobile'
+        classSettings='top-[0px] hidden md:block'
+      />
+      <Background
+        imgSrc='bg/token-design-tablet-mid.png'
+        imgAlt='bg-hero-mobile'
+        classSettings='top-[1700px] hidden md:block min-[900px]:hidden'
+      />
+
+      <Background
+        imgSrc='bg/token-design-tablet-mid-2.png'
+        imgAlt='bg-hero-mobile'
+        classSettings='top-[2076px] hidden md:block min-[900px]:hidden'
+      />
       {/* <Background
         imgSrc='bg/hero-bg-tablet.png'
         imgAlt='bg-hero-tablet'
@@ -91,14 +83,6 @@ function App() {
         classCustom='bg-transparent bottom-0 color-dodge'
         styleCustom={{ bottom: '0px' }}
       />
-      {/* <div className='w-full absolute left-0 right-0 bottom-0 z-20 md:hidden color-dodge'>
-        <img
-          src='footer/bg-mobile-group-no-el.png'
-          alt='bg-footer'
-          className='w-full'
-          // style={{ filter: 'invert(100%)' }}
-        />
-      </div> */}
     </div>
   );
 }

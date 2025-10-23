@@ -10,7 +10,7 @@ import { slickWhatIsBackyard } from '../assets/slickSettings';
 
 const WhatIsBackyardTablet = () => {
   return (
-    <div className='hidden md:block min-[1110px]:hidden mt-11 justify-between items-center'>
+    <div className='hidden md:block min-[1110px]:hidden mt-11 justify-between items-center what-is'>
       <Slider {...slickWhatIsBackyard}>
         {cardContent.map((item, idx) => (
           <WhatIsBackyardCardTablet
