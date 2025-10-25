@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 // import TokenDesignRightArrowIcon from '../vectors/TokenDesignRightArrowIcon';
 import { slickTokenDesign } from '../assets/slickSettings';
 import { cardInfo } from '../assets/howYARD';
+import BackgroundHowYard from './BackgroundHowYard';
 
 const HowYARDCardMobile = () => {
   return (
@@ -28,13 +29,12 @@ const HowYARDCardMobile = () => {
         </Slider>
       </div>
 
-      <div className='absolute right-0 top-0 z-0'>
-        <img
-          src='how-yard/mobile-var.png'
-          alt='icon'
-          className='rounded-tr-[31px]'
-        />
-      </div>
+      <BackgroundHowYard
+        imgSrc='how-yard/mobile-var.png'
+        imgAlt='bg-icon'
+        classCustom='right-0 top-0'
+        imgClassCustom='rounded-tr-[31px]'
+      />
     </div>
   );
 };

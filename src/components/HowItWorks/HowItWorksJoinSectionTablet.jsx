@@ -1,4 +1,5 @@
 import { linksIcons } from '../assets/howItWorks';
+import BackgroundHowItWorks from './BackgroundHowItWorks';
 
 const HowItWorksJoinSectionTablet = () => {
   return (
@@ -35,24 +36,21 @@ const HowItWorksJoinSectionTablet = () => {
             </span>
           </a>
         </div>
-        <div className='absolute bottom-0 left-0 right-0 rounded-[31px] hidden md:block min-[778px]:hidden'>
-          <img
-            src='how-it-works-svg/bg-tablet-main.png'
-            alt='bg'
-            className='rounded-br-[31px] rounded-bl-[31px] rounded-tr-[31px] rounded-tl-[31px] block w-full plus-ligher'
-          />
-        </div>
+        <BackgroundHowItWorks
+          imgSrc='how-it-works-svg/bg-tablet-main.png'
+          classCustom='hidden md:block min-[778px]:hidden'
+          imgClassCustom='rounded-tr-[31px] rounded-tl-[31px]'
+        />
       </div>
 
       <div className='w-full flex justify-center items-center p-5 md:p-9 bg-[#292829] rounded-[30px] relative'>
         <img src='how-it-works-svg/how-it-pic.png' alt='bg-pic' />
-        <div className='absolute bottom-0 left-0 right-0 rounded-[31px] hidden md:block '>
-          <img
-            src='how-it-works-svg/bg-tablet-pic.png'
-            alt='bg'
-            className='rounded-br-[31px] rounded-bl-[31px] rounded-tr-[31px] rounded-tl-[31px] block w-full plus-ligher'
-          />
-        </div>
+
+        <BackgroundHowItWorks
+          imgSrc='how-it-works-svg/bg-tablet-pic.png'
+          classCustom='hidden md:block'
+          imgClassCustom='rounded-tr-[31px] rounded-tl-[31px]'
+        />
       </div>
     </div>
   );

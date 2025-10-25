@@ -1,5 +1,6 @@
 import { linksIcons } from '../assets/howItWorks';
 import HowItWorksPlayIcon from '../vectors/HowItWorksPlayIcon';
+import BackgroundHowItWorks from './BackgroundHowItWorks';
 
 const HowItWorksJoinCard = () => {
   return (
@@ -45,13 +46,14 @@ const HowItWorksJoinCard = () => {
         </a>
       </div>
 
-      <div className='absolute bottom-0 left-0 right-0 rounded-[31px] min-[500px]:hidden'>
-        <img
-          src='how-it-works-svg/bg-mobile.png'
-          alt='bg'
-          className='rounded-br-[31px] rounded-bl-[31px] block w-full plus-ligher'
-        />
-      </div>
+      <BackgroundHowItWorks
+        imgSrc='how-it-works-svg/bg-mobile.png'
+        classCustom='min-[500px]:hidden'
+      />
+      <BackgroundHowItWorks
+        imgSrc='how-it-works-svg/bg-desk-1.png'
+        classCustom='hidden min-[1110px]:block min-[1370px]:hidden'
+      />
     </div>
   );
 };

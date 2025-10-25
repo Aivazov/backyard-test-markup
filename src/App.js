@@ -1,5 +1,5 @@
 import Background from './components/Background';
-import BackgroundFooter from './components/Backgrounds/BackgroundFooter';
+import BackgroundFooter from './components/Footer/BackgroundFooter';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -8,14 +8,12 @@ import HowYARD from './components/HowYARD/HowYARD';
 import RealYield from './components/RealYield/RealYield';
 import TokenDesign from './components/TokenDesign/TokenDesign';
 import WhatIsBackyard from './components/WhatIsBackyard/WhatIsBackyard';
-// import logo from './logo-header-360.svg';
-// import './App.css';
 
 function App() {
   const isFirefox = /firefox/i.test(navigator.userAgent);
   return (
     <div className='bg-[#EFEFF2] relative p-[22px] md:px-8 xl:px-20 flex justify-center items-center'>
-      <div className='w-full max-w-[1370px]'>
+      <div className='w-full xl:max-w-[1110px] 2xl:max-w-[1370px]'>
         <Header />
         <Hero />
         <WhatIsBackyard />
@@ -44,11 +42,10 @@ function App() {
           </div>
         </>
       )}
-
       <Background
         imgSrc='bg/hero-bg-tablet-no-ell.png'
         imgAlt='bg-hero-mobile'
-        classSettings='top-[0px] hidden md:block'
+        classSettings='top-[0px] hidden md:block min-[900px]:hidden'
       />
       <Background
         imgSrc='bg/token-design-tablet-mid.png'
@@ -61,11 +58,16 @@ function App() {
         imgAlt='bg-hero-mobile'
         classSettings='top-[2076px] hidden md:block min-[900px]:hidden'
       />
-      {/* <Background
-        imgSrc='bg/hero-bg-tablet.png'
-        imgAlt='bg-hero-tablet'
-        classSettings='md:block'
-      /> */}
+      <Background
+        imgSrc='bg/hero-bg-1100-no-ell.png'
+        imgAlt='bg-hero-big'
+        classSettings='top-[0px] hidden min-[1110px]:block min-[1370px]:hidden'
+      />
+      <Background
+        imgSrc='bg/hero-bg-1370-no-ell.png'
+        imgAlt='bg-hero-big'
+        classSettings='top-[0px] hidden min-[1370px]:block'
+      />
       <BackgroundFooter
         imgSrc='footer/footer-ellipse-1.png'
         styleCustom={{ filter: 'blur(71.1482px)' }}

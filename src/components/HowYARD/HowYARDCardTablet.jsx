@@ -1,4 +1,5 @@
 import { cardInfoFirstRow, cardInfoSecondRow } from '../assets/howYARD';
+import BackgroundHowYard from './BackgroundHowYard';
 import HowYARDTabletSecondaryCard from './HowYARDTabletSecondaryCard';
 
 const HowYARDCardTablet = () => {
@@ -17,13 +18,12 @@ const HowYARDCardTablet = () => {
             </p>
           </div>
 
-          <div className='absolute right-0 top-0 z-0'>
-            <img
-              src='how-yard/tablet-var.jpg'
-              alt='icon'
-              className='rounded-tr-[31px]'
-            />
-          </div>
+          <BackgroundHowYard
+            imgSrc='how-yard/tablet-var.jpg'
+            imgAlt='bg-icon'
+            classCustom='block right-0 top-0'
+            imgClassCustom='rounded-tr-[31px]'
+          />
         </div>
 
         {cardInfoFirstRow.map((item) => (
@@ -46,20 +46,25 @@ const HowYARDCardTablet = () => {
           />
         ))}
       </div>
-      <div className='hidden md:block min-[1110px]:hidden absolute top-[80px] min-[800px]:top-[63px] left-[160px] min-[900px]:left-[200px] min-[930px]:hidden z-0'>
-        <img
-          src='how-yard/how-yard-bg-tablet.png'
-          alt='how-yard-bg-tablet'
-          className='h-[190px] min-[800px]:h-[220px]'
-        />
-      </div>
-      <div className='hidden min-[1110px]:block min-[1350px]:hidden absolute top-[80px] left-[160px] z-0'>
-        <img
-          src='how-yard/how-yard-bg-desktop.png'
-          alt='how-yard-bg-desktop'
-          className='h-[190px]'
-        />
-      </div>
+
+      <BackgroundHowYard
+        imgSrc='how-yard/how-yard-bg-tablet.png'
+        classCustom='hidden md:block min-[1110px]:hidden top-[80px] min-[800px]:top-[63px] left-[160px] min-[900px]:left-[200px] min-[930px]:hidden'
+        imgClassCustom='h-[190px] min-[800px]:h-[220px]'
+      />
+
+      <BackgroundHowYard
+        imgSrc='how-yard/how-yard-bg-desktop.png'
+        classCustom='hidden min-[1110px]:block 2xl:hidden top-[75px] left-[165px] min-[1180px]:left-[205px]'
+        imgClassCustom='h-[190px]'
+      />
+
+      <BackgroundHowYard
+        imgSrc='how-yard/how-yard-bg-desktop-2.png'
+        classCustom='hidden 2xl:block top-[70px] left-[325px]'
+        imgClassCustom='h-[200px]'
+        s
+      />
     </div>
   );
 };

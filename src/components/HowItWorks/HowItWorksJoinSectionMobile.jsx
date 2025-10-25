@@ -1,5 +1,5 @@
-import HowItWorksPlayIcon from '../../components/vectors/HowItWorksPlayIcon';
-import { linksIcons } from '../assets/howItWorks';
+// import HowItWorksPlayIcon from '../../components/vectors/HowItWorksPlayIcon';
+// import { linksIcons } from '../assets/howItWorks';
 import HowItWorksJoinCard from './HowItWorksJoinCard';
 
 const HowItWorksJoinSectionMobile = () => {
